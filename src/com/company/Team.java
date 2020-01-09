@@ -5,20 +5,19 @@ import java.util.ArrayList;
 public class Team {
     int points = 0;
     int wins = 0;
-    int draws = 0;
     int losses = 0;
+    int teamScore = 0;
     String teamName = "";
     String teamAbbreviation;
     public ArrayList<Player> listOfPlayers;
 
-    public Team(String teamName){
+    public Team(String teamName, int points){
         this.points = points;
         this.teamName = teamName;
         this.wins = wins;
         this.losses = losses;
         listOfPlayers = new ArrayList<>();
     }
-
 
     public int getPoints() {
         return points;
@@ -34,14 +33,6 @@ public class Team {
 
     public void setWins(int wins) {
         this.wins = wins;
-    }
-
-    public int getDraws() {
-        return draws;
-    }
-
-    public void setDraws(int draws) {
-        this.draws = draws;
     }
 
     public int getLosses() {
