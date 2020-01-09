@@ -3,6 +3,7 @@ package com.company;
 import java.util.ArrayList;
 
 public class Table {
+    }
     ArrayList<Team> listOfTeams;
     ArrayList<Player> listOfPlayers;
     int maxPoints = -1;
