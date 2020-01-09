@@ -5,6 +5,7 @@ import java.util.Collections;
 
 
 public class Table {
+    }
     ArrayList<Team> listOfTeams;
     ArrayList<Player> listOfPlayers;
     int maxPoints = -1;
