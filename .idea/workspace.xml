@@ -10,9 +10,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1W9nlcHK2cxsry5VCTnhhOdKEjQ" />
   <component name="ProjectViewState">
@@ -23,6 +27,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="C:/xml/JavaFinalREAL" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -59,10 +70,25 @@
       <option name="presentableId" value="Default" />
       <updated>1578570829347</updated>
       <workItem from="1578570831745" duration="868000" />
+      <workItem from="1578571901720" duration="3034000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-735" y="624" key="#com.intellij.ide.util.MemberChooser" timestamp="1578573742939">
+      <screen x="-1080" y="0" width="1080" height="1880" />
+    </state>
+    <state x="-735" y="624" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1080.0.1080.1880@-1080.0.1080.1880" timestamp="1578573742939" />
+    <state x="-744" y="825" width="408" height="238" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1578571966133">
+      <screen x="-1080" y="0" width="1080" height="1880" />
+    </state>
+    <state x="-744" y="825" width="408" height="238" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/-1080.0.1080.1880@-1080.0.1080.1880" timestamp="1578571966133" />
+    <state x="-760" y="695" key="FileChooserDialogImpl" timestamp="1578572204993">
+      <screen x="-1080" y="0" width="1080" height="1880" />
+    </state>
+    <state x="-760" y="695" key="FileChooserDialogImpl/0.0.1920.1040/-1080.0.1080.1880@-1080.0.1080.1880" timestamp="1578572204993" />
   </component>
 </project>
