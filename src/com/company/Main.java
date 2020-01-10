@@ -4,6 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
         Team Bob = new Team("Bob", 5);
+        Team eee = new Team("eee", 6);
+        Team ddd = new Team("ddd", 6);
         Team aaa = new Team("aaa", 6);
         Team bbb = new Team("bbb", 1);
 
@@ -11,6 +13,8 @@ public class Main {
         one.listOfTeams.add(Bob);
         one.listOfTeams.add(aaa);
         one.listOfTeams.add(bbb);
-        one.getPlacements();
+        one.listOfTeams.add(ddd);
+        one.listOfTeams.add(eee);
+        System.out.println(one.getPlacements());
     }
 }

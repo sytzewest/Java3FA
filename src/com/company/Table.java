@@ -3,7 +3,6 @@ package com.company;
 import java.util.ArrayList;
 
 public class Table {
-    }
     ArrayList<Team> listOfTeams;
     ArrayList<Player> listOfPlayers;
     int maxPoints = -1;
@@ -11,7 +10,7 @@ public class Table {
 
     public Table(){
         listOfTeams = new ArrayList<>();
-        listOfPlayers = new ArrayList<>(;
+        listOfPlayers = new ArrayList<>();
     }
 
     public void printTable(){
@@ -43,7 +42,6 @@ public class Table {
                         Team temp = listOfTeams.get(i);
                         listOfTeams.set(i, listOfTeams.get(i + 1));
                         listOfTeams.set(i + 1, temp);
-                        //System.out.println("swap: " + index + " " + next);
                         count = 0;
                     }
                     else
@@ -57,13 +55,18 @@ public class Table {
     }
 
     public int compare(double x, double y){
-        return (x <= y)?0:1;
+        return (x >= y)?0:1;
     }
 
     public ArrayList<Team> getPlacements()
     {
         ArrayList<Team> sortedArrayList;
         sortedArrayList = orderTeams(listOfTeams);
+        int count =0;
+            for (Team team : sortedArrayList) {
+                count++;
+                System.out.println(count + ". " + team.getTeamName() + " - " + team.getPoints() + " Points");
+            }
         return sortedArrayList;
     }
 

@@ -58,4 +58,9 @@ public class Team {
     public void setTeamAbbreviation(String teamAbbreviation) {
         this.teamAbbreviation = teamAbbreviation;
     }
+
+    @Override
+    public String toString() {
+        return teamName + ": " + points + " pts";
+    }
 }
