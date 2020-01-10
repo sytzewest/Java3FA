@@ -1,6 +1,8 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Collections;
+
 
 public class Table {
     ArrayList<Team> listOfTeams;
@@ -14,7 +16,7 @@ public class Table {
     }
 
     public void printTable(){
-
+        
     }
 
     public void printTopScorers(){
