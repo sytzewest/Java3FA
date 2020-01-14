@@ -1,6 +1,6 @@
 package com.company;
 
-public class Player {
+public class Player implements Sortable {
     String name = "";
     int shirtNumber = 0;
     int goals = 0;
@@ -43,5 +43,10 @@ public class Player {
 
     public void setFouls(int fouls) {
         this.fouls = fouls;
+    }
+
+    @Override
+    public int getSortableValue() {
+        return goals;
     }
 }

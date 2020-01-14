@@ -2,9 +2,10 @@ package com.company;
 
 import java.util.ArrayList;
 
-public class Team {
+public class Team implements Sortable {
     int points = 0;
     int wins = 0;
+    int draws = 0;
     int losses = 0;
     int teamScore = 0;
     String teamName = "";
@@ -62,5 +63,18 @@ public class Team {
     @Override
     public String toString() {
         return teamName + ": " + points + " pts";
+    }
+
+    public int getDraws() {
+        return draws;
+    }
+
+    public void setDraws(int draws) {
+        this.draws = draws;
+    }
+
+    @Override
+    public int getSortableValue() {
+        return points;
     }
 }

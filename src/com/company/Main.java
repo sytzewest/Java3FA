@@ -15,6 +15,6 @@ public class Main {
         one.listOfTeams.add(bbb);
         one.listOfTeams.add(ddd);
         one.listOfTeams.add(eee);
-        System.out.println(one.getPlacements());
+        one.printTable();
     }
 }
