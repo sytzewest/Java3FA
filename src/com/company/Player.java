@@ -49,4 +49,15 @@ public class Player implements Sortable {
     public int getSortableValue() {
         return goals;
     }
+
+    @Override
+    public String getDescription() {
+        return getName() + " - " + getGoals() + " Goals";
+    }
+
+    @Override
+    public String toString() {
+        return name + ": " + goals + " goals";
+    }
+
 }

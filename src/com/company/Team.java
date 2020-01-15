@@ -7,16 +7,13 @@ public class Team implements Sortable {
     int wins = 0;
     int draws = 0;
     int losses = 0;
-    int teamScore = 0;
     String teamName = "";
     String teamAbbreviation;
     public ArrayList<Player> listOfPlayers;
 
-    public Team(String teamName, int points){
-        this.points = points;
+    public Team(String teamName, String teamAbbreviation){
         this.teamName = teamName;
-        this.wins = wins;
-        this.losses = losses;
+        this.teamAbbreviation = teamAbbreviation;
         listOfPlayers = new ArrayList<>();
     }
 
@@ -76,5 +73,10 @@ public class Team implements Sortable {
     @Override
     public int getSortableValue() {
         return points;
+    }
+
+    @Override
+    public String getDescription() {
+        return getTeamName() + " - " + getPoints() + " Points";
     }
 }

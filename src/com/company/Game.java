@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
+import java.util.concurrent.TimeUnit;
 
 public class Game {
     int fullTime = 20;
@@ -26,30 +26,33 @@ public class Game {
     public void nextMinute(){
         if(currentTime == 10){
             System.out.println("Halftime");
+            currentTime++;
+        }else if(currentTime == 11){
+            System.out.println(currentTime + "th" + " Minute: ");
+            currentTime++;
+            System.out.print(currentTime + "th" + " Minute: ");
         }else if(currentTime == 20){
             System.out.println("Full Time");
         }else{
             currentTime++;
-            System.out.println(currentTime + "th" + " Minute");
+            System.out.println(currentTime + "th" + " Minute: ");
         }
     }
 
-    public void getWinner(Game game, Team team1, Team team2){
+    public void getWinner(Team team1, Team team2){
         if(getGoalsOf(team1) > getGoalsOf(team2)){
-            System.out.println("The winner is:");
-            System.out.println(team1.getTeamName());
+            System.out.println("The winner is: " + team1.getTeamName() + " : " + getGoalsOf(team1) + " - " + getGoalsOf(team2));
             team1.points =  team1.points + 3;
             team1.wins++;
             team2.losses++;
         }else if (getGoalsOf(team1) == getGoalsOf(team2)){
-            System.out.println("The game ended in a draw!");
+            System.out.println("The game ended in a draw! : " + getGoalsOf(team2) + " - " + getGoalsOf(team1));
             team1.points =  team1.points + 1;
             team2.points =  team1.points + 1;
             team1.draws++;
             team2.draws++;
         }else{
-            System.out.println("The winner is:");
-            System.out.println(team2.getTeamName());
+            System.out.println("The winner is: " + team2.getTeamName() + " : " + getGoalsOf(team2) + " - " + getGoalsOf(team1));
             team2.points = team2.points + 3;
             team2.wins++;
             team1.losses++;

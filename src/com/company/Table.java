@@ -2,25 +2,16 @@ package com.company;
 
 import java.util.ArrayList;
 
-
 public class Table {
     ArrayList<Team> listOfTeams;
-    ArrayList<Player> listOfPlayers;
-    int maxPoints = -1;
+    String leagueName;
 
-
-    public Table(){
+    public Table(String leagueName)
+    {
+        this.leagueName = leagueName;
         listOfTeams = new ArrayList<>();
-        listOfPlayers = new ArrayList<>();
-    }
-
-   /* public ArrayList<Player> getTopScorer(){
-    } */
-
-    public void printTopFoulers(){
 
     }
-
 
     private ArrayList<Sortable> sortItems(ArrayList<Sortable> list)
     {
@@ -62,16 +53,42 @@ public class Table {
         return (x >= y)?0:1;
     }
 
+    public ArrayList<Player> getListOfPlayers(){
+        ArrayList<Player> listOfPlayers = new ArrayList<>();
+        for (Team team : listOfTeams){
+            listOfPlayers.addAll(team.listOfPlayers);
+        }
+        return listOfPlayers;
+    }
+
     public void printTable()
     {
+        PrintData(toSortableList(listOfTeams));
+    }
+
+    public void printMostGoals(){
+        PrintData(toSortableList(getListOfPlayers()));
+    }
+
+    private void PrintData(ArrayList<Sortable> sortables) {
         ArrayList<Sortable> sortedArrayList;
-        sortedArrayList = sortItems(toSortableList(listOfTeams));
+        sortedArrayList = sortItems(sortables);
+
+        System.out.println(getLeagueName());
         int count =0;
-            for (Team team: sortedArrayList) {
-                count++;
-                System.out.println(count + ". " + team.getTeamName() + " - " + team.getPoints() + " Points");
-            }
+        for (Sortable item: sortedArrayList) {
+            count++;
+            System.out.println(count + ". " + item.getDescription());
+        }
         System.out.println(sortedArrayList);
+    }
+
+    public String getLeagueName() {
+        return leagueName;
+    }
+
+    public void setLeagueName(String leagueName) {
+        this.leagueName = leagueName;
     }
 }
 

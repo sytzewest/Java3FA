@@ -4,9 +4,10 @@ public abstract class Action implements Timeable{
     private Team team;
     private Player player;
 
-    public abstract void action(Team team, Player player);
-
-    public abstract void printAction();
+    public void action(Team team, Player player) {
+        this.team = team;
+        this.player = player;
+    }
 
     public Team getTeam() {
         return team;
