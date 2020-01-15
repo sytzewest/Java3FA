@@ -48,7 +48,7 @@ public class Game {
         }else if (getGoalsOf(team1) == getGoalsOf(team2)){
             System.out.println("The game ended in a draw! : " + getGoalsOf(team2) + " - " + getGoalsOf(team1));
             team1.points =  team1.points + 1;
-            team2.points =  team1.points + 1;
+            team2.points =  team2.points + 1;
             team1.draws++;
             team2.draws++;
         }else{
