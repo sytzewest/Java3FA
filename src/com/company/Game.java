@@ -48,7 +48,7 @@ public class Game {
         }else if (getGoalsOf(team1) == getGoalsOf(team2)){
             System.out.println("The game ended in a draw! : " + getGoalsOf(team2) + " - " + getGoalsOf(team1));
             team1.points =  team1.points + 1;
-            team2.points =  team1.points + 1;
+            team2.points =  team2.points + 1;
             team1.draws++;
             team2.draws++;
         }else{
@@ -70,6 +70,38 @@ public class Game {
        }
        return sum;
    }
+
+    public int getFullTime() {
+        return fullTime;
+    }
+
+    public void setFullTime(int fullTime) {
+        this.fullTime = fullTime;
+    }
+
+    public int getHalfTime() {
+        return halfTime;
+    }
+
+    public void setHalfTime(int halfTime) {
+        this.halfTime = halfTime;
+    }
+
+    public int getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(int startTime) {
+        this.startTime = startTime;
+    }
+
+    public int getCurrentTime() {
+        return currentTime;
+    }
+
+    public void setCurrentTime(int currentTime) {
+        this.currentTime = currentTime;
+    }
 }
 
 
