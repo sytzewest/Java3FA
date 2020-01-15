@@ -11,7 +11,6 @@ public class Game {
     int currentTime = 0;
     ArrayList<Timeable> listOfTimeables;
     ArrayList<Action> listofActions;
-    HashMap<Team, Foul> TeamsAndFouls;
 
     public Game(Team team1, Team team2){
         this.fullTime = fullTime;
@@ -20,7 +19,6 @@ public class Game {
         this.currentTime = currentTime;
         listOfTimeables = new ArrayList<>();
         listofActions = new ArrayList<>();
-        TeamsAndFouls = new HashMap<>();
     }
 
     public void nextMinute(){
