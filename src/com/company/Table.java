@@ -90,6 +90,18 @@ public class Table {
     public void setLeagueName(String leagueName) {
         this.leagueName = leagueName;
     }
+
+    public void printListOfPlayersInTeam(Team team) {
+        System.out.println("A list of all current players in: " +team.getTeamName());
+        System.out.println("----------------");
+
+        for (Player player : team.listOfPlayers) {
+            System.out.println("Player Name: " + player.getName());
+            System.out.println("Player Shirt Number: " + player.getShirtNumber());
+            System.out.println("----------------");
+        }
+        System.out.println(" ");
+    }
 }
 
 

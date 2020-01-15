@@ -79,4 +79,11 @@ public class Team implements Sortable {
     public String getDescription() {
         return getTeamName() + " - " + getPoints() + " Points";
     }
+
+    public void printPlayersStats(Player player) {
+            System.out.println("Player Name: " + player.getName());
+            System.out.println("Player Goals: " + player.getGoals());
+            System.out.println("Player Fouls: " + player.getFouls());
+            System.out.println("Player Shirt Number: " + player.getShirtNumber());
+    }
 }

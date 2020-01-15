@@ -54,7 +54,10 @@ public class Main {
         game.nextMinute();
         game.getWinner(team, team2);
 
+
         one.printTable();
         one.printMostGoals();
+        one.printListOfPlayersInTeam(team);
+        team.printPlayersStats(bob);
     }
 }
