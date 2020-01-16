@@ -16,10 +16,10 @@ public class Main {
         Team team = new Team("One", "yay");
         Team team2 = new Team("Two", "popo");
 
-        team.listOfPlayers.add(bob);
-        team.listOfPlayers.add(ooo);
-        team2.listOfPlayers.add(rrr);
-        team2.listOfPlayers.add(hhh);
+        team.addPlayerToTeam(bob);
+        team.addPlayerToTeam(ooo);
+        team2.addPlayerToTeam(rrr);
+        team2.addPlayerToTeam(hhh);
 
         Table one = new Table("Eredivisie");
         one.listOfTeams.add(team);

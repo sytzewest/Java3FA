@@ -16,8 +16,8 @@ class TeamTest {
         Team Emmen = new Team("Emmen", "Emn");
         Player Sven = new Player("Sven Botman", 10);
         Team Heerenveen = new Team("Heerenveen", "Her");
-        Heerenveen.listOfPlayers.add(Sven);
-        Emmen.listOfPlayers.add(Glenn);
+        Heerenveen.addPlayerToTeam(Sven);
+        Emmen.addPlayerToTeam(Glenn);
         Game game1 = new Game(Heerenveen, Emmen);
         game1.nextMinute();
         game1.nextMinute();
@@ -50,8 +50,8 @@ class TeamTest {
         Team Emmen = new Team("Emmen", "Emn");
         Player Sven = new Player("Sven Botman", 10);
         Team Heerenveen = new Team("Heerenveen", "Her");
-        Heerenveen.listOfPlayers.add(Sven);
-        Emmen.listOfPlayers.add(Glenn);
+        Heerenveen.addPlayerToTeam(Sven);
+        Emmen.addPlayerToTeam(Glenn);
         Goal goal1 = new Goal();
         Game game1 = new Game(Heerenveen, Emmen);
         game1.nextMinute();
@@ -87,8 +87,8 @@ class TeamTest {
         Team Emmen = new Team("Emmen", "Emn");
         Player Sven = new Player("Sven Botman", 10);
         Team Heerenveen = new Team("Heerenveen", "Her");
-        Heerenveen.listOfPlayers.add(Sven);
-        Emmen.listOfPlayers.add(Glenn);
+        Heerenveen.addPlayerToTeam(Sven);
+        Emmen.addPlayerToTeam(Glenn);
         Goal goal1 = new Goal();
         Game game1 = new Game(Heerenveen, Emmen);
         game1.nextMinute();
@@ -136,8 +136,8 @@ class TeamTest {
         Team Emmen = new Team("Emmen", "Emn");
         Player Sven = new Player("Sven Botman", 10);
         Team Heerenveen = new Team("Heerenveen", "Her");
-        Heerenveen.listOfPlayers.add(Sven);
-        Emmen.listOfPlayers.add(Glenn);
+        Heerenveen.addPlayerToTeam(Sven);
+        Emmen.addPlayerToTeam(Glenn);
         Goal goal1 = new Goal();
         Goal goal2 = new Goal();
         Game game1 = new Game(Heerenveen, Emmen);
@@ -168,5 +168,13 @@ class TeamTest {
         game1.getWinner(Emmen, Heerenveen);
         assertEquals(1, Emmen.getDraws());
         assertEquals(1, Heerenveen.getDraws());
+    }
+
+    @Test
+    void addPlayerToTeam() {
+        Player Glenn = new Player("Glenn Bijl", 18);
+        Team Emmen = new Team("Emmen", "Emn");
+        Emmen.addPlayerToTeam(Glenn);
+        assertEquals(1, Emmen.getTeamSize());
     }
 }

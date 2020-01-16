@@ -10,8 +10,10 @@ public class Team implements Sortable {
     private int wins = 0;
     private int draws = 0;
     private int losses = 0;
+    private int maxTeamSize = 5;
     private String teamName = "";
     private String teamAbbreviation;
+    private int teamSize = 0;
     public ArrayList<Player> listOfPlayers;
 
     public Team(String teamName, String teamAbbreviation){
@@ -76,6 +78,14 @@ public class Team implements Sortable {
         this.teamAbbreviation = teamAbbreviation;
     }
 
+    public int getTeamSize() {
+        return teamSize;
+    }
+
+    public void setTeamSize(int teamSize) {
+        this.teamSize = teamSize;
+    }
+
     @Override
     public String toString() {
         return teamName + ": " + points + " pts";
@@ -105,4 +115,17 @@ public class Team implements Sortable {
             System.out.println("Player Fouls: " + player.getFouls());
             System.out.println("Player Shirt Number: " + player.getShirtNumber());
     }
+
+    public void addPlayerToTeam(Player player){
+        try{
+            if(teamSize<maxTeamSize) {
+                listOfPlayers.add(player);
+                teamSize++;
+            }
+        } catch (Exception e){
+            System.out.println("Error, team is already full");
+        }
+    }
+
+
 }

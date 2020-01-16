@@ -8,7 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="311" />
+    <option name="myElementSize" value="230" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,6 +50,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="Team" />
       <recent name="com.company" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -78,21 +79,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaFinal_3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Actions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.GameTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TableTest.compare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaFinal_3" />
       <extension name="coverage">
@@ -104,6 +90,22 @@
       <option name="PACKAGE_NAME" value="com.company" />
       <option name="MAIN_CLASS_NAME" value="com.company.TableTest" />
       <option name="METHOD_NAME" value="compare" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeamTest.addPlayerToTeam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaFinal_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com" />
+      <option name="MAIN_CLASS_NAME" value="com.TeamTest" />
+      <option name="METHOD_NAME" value="addPlayerToTeam" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -126,10 +128,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in JavaFinal_3" />
+        <item itemvalue="JUnit.TeamTest.addPlayerToTeam" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TableTest.compare" />
         <item itemvalue="JUnit.com.company in JavaFinal_3" />
-        <item itemvalue="JUnit.GameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -170,6 +172,7 @@
       <workItem from="1579104865674" duration="1776000" />
       <workItem from="1579119503813" duration="69000" />
       <workItem from="1579161388551" duration="2185000" />
+      <workItem from="1579163878470" duration="1263000" />
     </task>
     <servers />
   </component>
@@ -195,10 +198,10 @@
     </state>
     <state x="-948" y="599" key="#Notifications/0.0.1920.1040/-1080.0.1080.1880@-1080.0.1080.1880" timestamp="1578575266585" />
     <state x="235" y="331" key="#Notifications/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579106210530" />
-    <state x="437" y="243" key="#com.intellij.ide.util.MemberChooser" timestamp="1579098750952">
+    <state x="437" y="243" key="#com.intellij.ide.util.MemberChooser" timestamp="1579164129191">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="437" y="243" key="#com.intellij.ide.util.MemberChooser/0.0.1368.872@0.0.1368.872" timestamp="1579098750952" />
+    <state x="437" y="243" key="#com.intellij.ide.util.MemberChooser/0.0.1368.872@0.0.1368.872" timestamp="1579164129191" />
     <state x="-735" y="624" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1080.0.1080.1880@-1080.0.1080.1880" timestamp="1578581016358" />
     <state x="613" y="345" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579095179466" />
     <state x="-744" y="825" width="408" height="238" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1578571966133">
@@ -209,31 +212,31 @@
       <screen x="-1080" y="0" width="1080" height="1880" />
     </state>
     <state x="-760" y="695" key="FileChooserDialogImpl/0.0.1920.1040/-1080.0.1080.1880@-1080.0.1080.1880" timestamp="1578572204993" />
-    <state width="1877" height="343" key="GridCell.Tab.0.bottom" timestamp="1579163653327">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1326" height="227" key="GridCell.Tab.0.bottom" timestamp="1579165144699">
+      <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1579100900034" />
+    <state width="1326" height="227" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1579165144699" />
     <state width="1037" height="559" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1080.0.1080.1880@-1080.0.1080.1880" timestamp="1578580092660" />
     <state width="1877" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579106643405" />
     <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579163653327" />
-    <state width="1877" height="343" key="GridCell.Tab.0.center" timestamp="1579163653327">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1326" height="227" key="GridCell.Tab.0.center" timestamp="1579165144699">
+      <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1579100900034" />
+    <state width="1326" height="227" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1579165144699" />
     <state width="1037" height="559" key="GridCell.Tab.0.center/0.0.1920.1040/-1080.0.1080.1880@-1080.0.1080.1880" timestamp="1578580092660" />
     <state width="1877" height="256" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579106643405" />
     <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579163653327" />
-    <state width="1877" height="343" key="GridCell.Tab.0.left" timestamp="1579163653327">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1326" height="227" key="GridCell.Tab.0.left" timestamp="1579165144699">
+      <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1579100900034" />
+    <state width="1326" height="227" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1579165144699" />
     <state width="1037" height="559" key="GridCell.Tab.0.left/0.0.1920.1040/-1080.0.1080.1880@-1080.0.1080.1880" timestamp="1578580092660" />
     <state width="1877" height="256" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579106643405" />
     <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579163653327" />
-    <state width="1877" height="343" key="GridCell.Tab.0.right" timestamp="1579163653327">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1326" height="227" key="GridCell.Tab.0.right" timestamp="1579165144699">
+      <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1579100900034" />
+    <state width="1326" height="227" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1579165144699" />
     <state width="1037" height="559" key="GridCell.Tab.0.right/0.0.1920.1040/-1080.0.1080.1880@-1080.0.1080.1880" timestamp="1578580092660" />
     <state width="1877" height="256" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579106643405" />
     <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579163653327" />
@@ -257,15 +260,19 @@
     </state>
     <state width="1037" height="684" key="GridCell.Tab.1.right/0.0.1920.1040/-1080.0.1080.1880@-1080.0.1080.1880" timestamp="1578579509192" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579092912300" />
+    <state x="380" y="261" key="com.intellij.ide.util.TipDialog" timestamp="1579163880809">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="380" y="261" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1579163880809" />
     <state x="571" y="394" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1579104881678">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="407" y="330" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1368.872@0.0.1368.872" timestamp="1579097758627" />
     <state x="571" y="394" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579104881678" />
-    <state x="871" y="114" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1579099669820">
+    <state x="871" y="114" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1579165031379">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="871" y="114" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1368.872@0.0.1368.872" timestamp="1579099669820" />
+    <state x="871" y="114" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1368.872@0.0.1368.872" timestamp="1579165031379" />
     <state x="690" y="300" key="extract.method.dialog" timestamp="1579015230059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -279,6 +286,6 @@
     <SUITE FILE_PATH="coverage/Java3FA$com_company_in_JavaFinal_3.ic" NAME="com.company in JavaFinal_3 Coverage Results" MODIFIED="1579105810899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.company.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Java3FA$All_in_JavaFinal_3.ic" NAME="All in JavaFinal_3 Coverage Results" MODIFIED="1579119511185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Java3FA$All_in_JavaFinal_3.ic" NAME="All in JavaFinal_3 Coverage Results" MODIFIED="1579165131363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

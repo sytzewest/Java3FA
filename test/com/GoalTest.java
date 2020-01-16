@@ -13,6 +13,7 @@ class GoalTest {
     void action() {
         Player Glenn = new Player("Glenn Bijl", 18);
         Team Emmen = new Team("Emmen", "Emn");
+        Emmen.addPlayerToTeam(Glenn);
         Goal goal1 = new Goal();
         goal1.action(Emmen, Glenn);
         assertEquals(Emmen, goal1.getTeam());

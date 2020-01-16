@@ -27,7 +27,7 @@ class PlayerTest {
         Goal goal1 = new Goal();
         Team Emmen = new Team("Emmen", "Emn");
         Player Glenn = new Player("Glenn Bijl", 18);
-        Emmen.listOfPlayers.add(Glenn);
+        Emmen.addPlayerToTeam(Glenn);
         goal1.action(Emmen, Glenn);
         assertEquals(1,Glenn.getGoals());
     }
@@ -37,7 +37,7 @@ class PlayerTest {
         Foul foul1 = new Foul();
         Team Emmen = new Team("Emmen", "Emn");
         Player Glenn = new Player("Glenn Bijl", 18);
-        Emmen.listOfPlayers.add(Glenn);
+        Emmen.addPlayerToTeam(Glenn);
         foul1.action(Emmen, Glenn);
         assertEquals(1,Glenn.getFouls());
     }

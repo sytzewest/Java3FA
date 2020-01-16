@@ -13,6 +13,7 @@ class FoulTest {
     void action() {
         Player Glenn = new Player("Glenn Bijl", 18);
         Team Emmen = new Team("Emmen", "Emn");
+        Emmen.addPlayerToTeam(Glenn);
         Foul foul1 = new Foul();
         foul1.action(Emmen, Glenn);
         assertEquals(Emmen, foul1.getTeam());

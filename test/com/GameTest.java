@@ -15,6 +15,8 @@ class GameTest {
         Team Emmen = new Team("Emmen", "Emn");
         Player Sven = new Player("Sven Botman", 10);
         Team Heerenveen = new Team("Heerenveen", "Her");
+        Emmen.addPlayerToTeam(Glenn);
+        Heerenveen.addPlayerToTeam(Sven);
         Game game1 = new Game(Heerenveen, Emmen);
         game1.nextMinute();
         assertEquals(1 ,game1.getCurrentTime());
@@ -26,8 +28,8 @@ class GameTest {
         Team Emmen = new Team("Emmen", "Emn");
         Player Sven = new Player("Sven Botman", 10);
         Team Heerenveen = new Team("Heerenveen", "Her");
-        Heerenveen.listOfPlayers.add(Sven);
-        Emmen.listOfPlayers.add(Glenn);
+        Heerenveen.addPlayerToTeam(Sven);
+        Emmen.addPlayerToTeam(Glenn);
         Game game1 = new Game(Heerenveen, Emmen);
         game1.nextMinute();
         game1.nextMinute();
@@ -59,8 +61,8 @@ class GameTest {
         Team Emmen = new Team("Emmen", "Emn");
         Player Sven = new Player("Sven Botman", 10);
         Team Heerenveen = new Team("Heerenveen", "Her");
-        Heerenveen.listOfPlayers.add(Sven);
-        Emmen.listOfPlayers.add(Glenn);
+        Heerenveen.addPlayerToTeam(Sven);
+        Emmen.addPlayerToTeam(Glenn);
         Game game1 = new Game(Heerenveen, Emmen);
         game1.nextMinute();
         game1.nextMinute();
@@ -92,8 +94,8 @@ class GameTest {
         Team Emmen = new Team("Emmen", "Emn");
         Player Sven = new Player("Sven Botman", 10);
         Team Heerenveen = new Team("Heerenveen", "Her");
-        Heerenveen.listOfPlayers.add(Sven);
-        Emmen.listOfPlayers.add(Glenn);
+        Heerenveen.addPlayerToTeam(Sven);
+        Emmen.addPlayerToTeam(Glenn);
         Game game1 = new Game(Emmen,Heerenveen);
         assertEquals(20, game1.getFullTime());
     }
@@ -104,8 +106,8 @@ class GameTest {
         Team Emmen = new Team("Emmen", "Emn");
         Player Sven = new Player("Sven Botman", 10);
         Team Heerenveen = new Team("Heerenveen", "Her");
-        Heerenveen.listOfPlayers.add(Sven);
-        Emmen.listOfPlayers.add(Glenn);
+        Heerenveen.addPlayerToTeam(Sven);
+        Emmen.addPlayerToTeam(Glenn);
         Game game1 = new Game(Emmen,Heerenveen);
         game1.setFullTime(1);
         assertEquals(1, game1.getFullTime());
@@ -117,8 +119,8 @@ class GameTest {
         Team Emmen = new Team("Emmen", "Emn");
         Player Sven = new Player("Sven Botman", 10);
         Team Heerenveen = new Team("Heerenveen", "Her");
-        Heerenveen.listOfPlayers.add(Sven);
-        Emmen.listOfPlayers.add(Glenn);
+        Heerenveen.addPlayerToTeam(Sven);
+        Emmen.addPlayerToTeam(Glenn);
         Game game1 = new Game(Emmen,Heerenveen);
         assertEquals(10, game1.getHalfTime());
     }
@@ -129,8 +131,8 @@ class GameTest {
         Team Emmen = new Team("Emmen", "Emn");
         Player Sven = new Player("Sven Botman", 10);
         Team Heerenveen = new Team("Heerenveen", "Her");
-        Heerenveen.listOfPlayers.add(Sven);
-        Emmen.listOfPlayers.add(Glenn);
+        Heerenveen.addPlayerToTeam(Sven);
+        Emmen.addPlayerToTeam(Glenn);
         Game game1 = new Game(Emmen,Heerenveen);
         game1.setHalfTime(1);
         assertEquals(1, game1.getHalfTime());
@@ -142,8 +144,8 @@ class GameTest {
         Team Emmen = new Team("Emmen", "Emn");
         Player Sven = new Player("Sven Botman", 10);
         Team Heerenveen = new Team("Heerenveen", "Her");
-        Heerenveen.listOfPlayers.add(Sven);
-        Emmen.listOfPlayers.add(Glenn);
+        Heerenveen.addPlayerToTeam(Sven);
+        Emmen.addPlayerToTeam(Glenn);
         Game game1 = new Game(Emmen,Heerenveen);
         assertEquals(0, game1.getStartTime());
     }
@@ -154,8 +156,8 @@ class GameTest {
         Team Emmen = new Team("Emmen", "Emn");
         Player Sven = new Player("Sven Botman", 10);
         Team Heerenveen = new Team("Heerenveen", "Her");
-        Heerenveen.listOfPlayers.add(Sven);
-        Emmen.listOfPlayers.add(Glenn);
+        Heerenveen.addPlayerToTeam(Sven);
+        Emmen.addPlayerToTeam(Glenn);
         Game game1 = new Game(Emmen,Heerenveen);
         game1.setStartTime(1);
         assertEquals(1, game1.getStartTime());
@@ -167,8 +169,8 @@ class GameTest {
         Team Emmen = new Team("Emmen", "Emn");
         Player Sven = new Player("Sven Botman", 10);
         Team Heerenveen = new Team("Heerenveen", "Her");
-        Heerenveen.listOfPlayers.add(Sven);
-        Emmen.listOfPlayers.add(Glenn);
+        Heerenveen.addPlayerToTeam(Sven);
+        Emmen.addPlayerToTeam(Glenn);
         Game game1 = new Game(Emmen,Heerenveen);
         assertEquals(0, game1.getCurrentTime());
     }
@@ -179,8 +181,8 @@ class GameTest {
         Team Emmen = new Team("Emmen", "Emn");
         Player Sven = new Player("Sven Botman", 10);
         Team Heerenveen = new Team("Heerenveen", "Her");
-        Heerenveen.listOfPlayers.add(Sven);
-        Emmen.listOfPlayers.add(Glenn);
+        Heerenveen.addPlayerToTeam(Sven);
+        Emmen.addPlayerToTeam(Glenn);
         Game game1 = new Game(Emmen,Heerenveen);
         game1.setCurrentTime(1);
         assertEquals(1, game1.getCurrentTime());
