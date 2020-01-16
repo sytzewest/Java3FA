@@ -1,5 +1,6 @@
 package Team;
 
+import Main.TeamTooFullException;
 import Team.Player;
 import Interfaces.Sortable;
 
@@ -13,7 +14,6 @@ public class Team implements Sortable {
     private int maxTeamSize = 5;
     private String teamName = "";
     private String teamAbbreviation;
-    private int teamSize = 0;
     public ArrayList<Player> listOfPlayers;
 
     public Team(String teamName, String teamAbbreviation){
@@ -79,12 +79,9 @@ public class Team implements Sortable {
     }
 
     public int getTeamSize() {
-        return teamSize;
+        return listOfPlayers.size();
     }
 
-    public void setTeamSize(int teamSize) {
-        this.teamSize = teamSize;
-    }
 
     @Override
     public String toString() {
@@ -116,14 +113,13 @@ public class Team implements Sortable {
             System.out.println("Player Shirt Number: " + player.getShirtNumber());
     }
 
-    public void addPlayerToTeam(Player player){
+    public void addPlayerToTeam(Player player) throws TeamTooFullException {
         try{
-            if(teamSize<maxTeamSize) {
+            if(listOfPlayers.size()<maxTeamSize) {
                 listOfPlayers.add(player);
-                teamSize++;
             }
         } catch (Exception e){
-            System.out.println("Error, team is already full");
+            throw new TeamTooFullException("Team is too full, select a different team.");
         }
     }
 

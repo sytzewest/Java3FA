@@ -125,6 +125,14 @@ class TeamTest {
     }
 
     @Test
+    void getTeamSize() {
+        Player Glenn = new Player("Glenn Bijl", 18);
+        Team Emmen = new Team("Emmen", "Emn");
+        Emmen.addPlayerToTeam(Glenn);
+        assertEquals(1, Emmen.getTeamSize());
+    }
+
+    @Test
     void getTeamAbbreviation() {
         Team Emmen = new Team("Emmen", "Emn");
         assertEquals("Emn", Emmen.getTeamAbbreviation());

@@ -14,8 +14,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -57,7 +57,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in JavaFinal_3">
+  <component name="RunManager" selected="JUnit.TeamTest.getTeamSize">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="JavaFinal_3" />
@@ -111,27 +111,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.company in JavaFinal_3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeamTest.getTeamSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaFinal_3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Actions.*" />
+          <option name="PATTERN" value="com.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="com" />
+      <option name="MAIN_CLASS_NAME" value="com.TeamTest" />
+      <option name="METHOD_NAME" value="getTeamSize" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TeamTest.getTeamSize" />
         <item itemvalue="JUnit.All in JavaFinal_3" />
         <item itemvalue="JUnit.TeamTest.addPlayerToTeam" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TableTest.compare" />
-        <item itemvalue="JUnit.com.company in JavaFinal_3" />
       </list>
     </recent_temporary>
   </component>
@@ -173,6 +175,7 @@
       <workItem from="1579119503813" duration="69000" />
       <workItem from="1579161388551" duration="2185000" />
       <workItem from="1579163878470" duration="1263000" />
+      <workItem from="1579170403660" duration="504000" />
     </task>
     <servers />
   </component>
@@ -212,31 +215,31 @@
       <screen x="-1080" y="0" width="1080" height="1880" />
     </state>
     <state x="-760" y="695" key="FileChooserDialogImpl/0.0.1920.1040/-1080.0.1080.1880@-1080.0.1080.1880" timestamp="1578572204993" />
-    <state width="1326" height="227" key="GridCell.Tab.0.bottom" timestamp="1579165144699">
+    <state width="1326" height="227" key="GridCell.Tab.0.bottom" timestamp="1579170586477">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1579165144699" />
+    <state width="1326" height="227" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1579170586477" />
     <state width="1037" height="559" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1080.0.1080.1880@-1080.0.1080.1880" timestamp="1578580092660" />
     <state width="1877" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579106643405" />
     <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579163653327" />
-    <state width="1326" height="227" key="GridCell.Tab.0.center" timestamp="1579165144699">
+    <state width="1326" height="227" key="GridCell.Tab.0.center" timestamp="1579170586477">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1579165144699" />
+    <state width="1326" height="227" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1579170586477" />
     <state width="1037" height="559" key="GridCell.Tab.0.center/0.0.1920.1040/-1080.0.1080.1880@-1080.0.1080.1880" timestamp="1578580092660" />
     <state width="1877" height="256" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579106643405" />
     <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579163653327" />
-    <state width="1326" height="227" key="GridCell.Tab.0.left" timestamp="1579165144699">
+    <state width="1326" height="227" key="GridCell.Tab.0.left" timestamp="1579170586477">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1579165144699" />
+    <state width="1326" height="227" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1579170586477" />
     <state width="1037" height="559" key="GridCell.Tab.0.left/0.0.1920.1040/-1080.0.1080.1880@-1080.0.1080.1880" timestamp="1578580092660" />
     <state width="1877" height="256" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579106643405" />
     <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579163653327" />
-    <state width="1326" height="227" key="GridCell.Tab.0.right" timestamp="1579165144699">
+    <state width="1326" height="227" key="GridCell.Tab.0.right" timestamp="1579170586477">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1579165144699" />
+    <state width="1326" height="227" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1579170586477" />
     <state width="1037" height="559" key="GridCell.Tab.0.right/0.0.1920.1040/-1080.0.1080.1880@-1080.0.1080.1880" timestamp="1578580092660" />
     <state width="1877" height="256" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579106643405" />
     <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579163653327" />
